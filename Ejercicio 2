@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  background: #fc8b00;
+}
+
+/* Este es el header*/
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(129, 129, 129);
+  color: #fbfbfb
+}
+
+.header h1 {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/* Este es el menu de navegacion  */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Esto es el estilo que tiene el menu de navegacion */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Esta crea las 2 columnas a la par de cada una */
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #fc8b00;
+  padding-left: 20px;
+}
+
+/* Aquí iria una imagen */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* agrega el color y forma del color de atras de los cuadros */
+.card {
+  background-color: rgb(129, 129, 129);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* este es el espacio en blanco para luego ir el footer */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* aqui va el Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(129, 129, 129);
+  margin-top: 20px;
+}
+
+/* esto hace que la pagina se ajuste a cualquier dispositivo */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*esta realiza lo mismo */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Website lab 2</h1>
+  <p>Este es el header.</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Estos</a>
+  <a href="#">son</a>
+  <a href="#">Menus</a>
+  <a href="#" style="float:right">de Opciones</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>esta es la portada</h2>
+      <h5>descripcion</h5>
+      <div class="fakeimg" style="height:200px;">Imagen</div>
+      <p>texto</p>
+      <p>texto</p>
+    </div>
+    <div class="card">
+      <h2>secciones</h2>
+      <h5>titulo</h5>
+      <div class="fakeimg" style="height:200px;">Imagen</div>
+      <p>texto</p>
+      <p>texto</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>secciones</h2>
+      <div class="fakeimg" style="height:100px;">Imagen</div>
+      <p>texto</p>
+    </div>
+    <div class="card">
+      <h3>secciones</h3>
+      <div class="fakeimg"><p>Imagen</p></div>
+      <div class="fakeimg"><p>Imagen</p></div>
+      <div class="fakeimg"><p>Imagen</p></div>
+    </div>
+    <div class="card">
+      <h3>contacto</h3>
+      <p>5566-7788</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>este es un Footer</h2>
+</div>
+
+</body>
+</html>
